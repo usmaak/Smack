@@ -8,7 +8,19 @@
 
 import Foundation
 
+typealias CompletionHandler = (_ Success: Bool) -> ()
+
 //Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND = "unwindToChannel"
+
+//User DefaultsFoundation
+let TOKEN_KEY = "token"
+let LOGGED_INKEY = "loggedIn"
+let USER_EMAIL = "userEmail"
+
+//URL Constants
+let BASE_URL = "https://chattychatchatsdk.herokuapp.com/V1/"
+let URL_REGISTER = "\(BASE_URL)account/register"
+
