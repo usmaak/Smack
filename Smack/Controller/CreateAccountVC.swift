@@ -46,6 +46,7 @@ class CreateAccountVC: UIViewController {
         let b = CGFloat(arc4random_uniform(255))/255
         
         bgColor = UIColor(displayP3Red: r, green: g, blue: b, alpha: 1)
+        avatarColor = "[\(r), \(g), \(b), 1.0]"
         
         UIView.animate(withDuration: 0.2) {
             self.userImg.backgroundColor = self.bgColor
