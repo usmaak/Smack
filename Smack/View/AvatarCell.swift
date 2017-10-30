@@ -15,7 +15,7 @@ enum AvatarType {
 
 class AvatarCell: UICollectionViewCell {
     @IBOutlet weak var avatarImage: UIImageView!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpView()
