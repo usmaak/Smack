@@ -158,12 +158,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEU-e4-11g">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="83f-hR-FfN" firstAttribute="top" secondItem="XI1-Yy-U1k" secondAttribute="bottom" id="2Xs-Sm-PRi"/>
                             <constraint firstItem="Owj-Xg-FEB" firstAttribute="leading" secondItem="XI1-Yy-U1k" secondAttribute="trailing" constant="8" id="AvP-A3-nWi"/>
                             <constraint firstItem="IWg-wV-pHM" firstAttribute="top" secondItem="DPs-wb-qwe" secondAttribute="top" id="BGN-0x-PdA"/>
+                            <constraint firstItem="uEU-e4-11g" firstAttribute="leading" secondItem="DPs-wb-qwe" secondAttribute="leading" constant="8" id="FAs-w0-jw7"/>
+                            <constraint firstItem="XI1-Yy-U1k" firstAttribute="top" secondItem="uEU-e4-11g" secondAttribute="bottom" constant="6" id="Fuy-hk-H1x"/>
                             <constraint firstItem="XI1-Yy-U1k" firstAttribute="top" secondItem="6DL-TW-zsB" secondAttribute="bottom" constant="30" id="Hr7-Gc-5DG"/>
                             <constraint firstItem="XI1-Yy-U1k" firstAttribute="leading" secondItem="DPs-wb-qwe" secondAttribute="leading" id="Jbt-7r-cS6"/>
                             <constraint firstAttribute="trailing" secondItem="6DL-TW-zsB" secondAttribute="trailing" id="Vcz-sY-PLA"/>
@@ -181,6 +189,7 @@
                         <outlet property="messageTextBox" destination="XI1-Yy-U1k" id="bht-7C-OYt"/>
                         <outlet property="sendButton" destination="Owj-Xg-FEB" id="1dF-uS-DfT"/>
                         <outlet property="tableView" destination="6DL-TW-zsB" id="1yh-4Z-pjw"/>
+                        <outlet property="typingUsersLabel" destination="uEU-e4-11g" id="BuV-dV-7s5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTb-Kp-zYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
